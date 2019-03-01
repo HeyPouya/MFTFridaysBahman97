@@ -9,14 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".TestDrawerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity android:name=".TestSharePrenfrenceActivity">
+        </activity>
+        <activity android:name=".TestImplicitIntentActivity"></activity>
+        <activity android:name=".ConfirmDataActivity" />
+        <activity android:name=".EnterDataActivity" />
+        <activity android:name=".TestClickListenerActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

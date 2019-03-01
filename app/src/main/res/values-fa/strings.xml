@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">MFTFridaysBahman97</string>
-    <string name="welcome_to_my_app">Welcome to my app!</string>
-    <string name="show_more">Show More !</string>
+    <string name="welcome_to_my_app">یه اپلیکیشن من خوش آمدی!</string>
+    <string name="show_more">نمایش بیشتر !</string>
     <string name="hi_mft_students">Hi MFT Students</string>
     <string name="please_enter_you_number">Please enter you number</string>
-    <string name="name">name</string>
-    <string name="confirm">confirm</string>
 </resources>
