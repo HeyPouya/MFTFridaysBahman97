@@ -11,18 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestWebViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".TestVideoViewActivity">
 
         </activity>
-        <activity android:name=".TestHTMLAtivity">
+        <activity android:name=".TestDataBaseActivity">
         </activity>
-        <activity android:name=".TestAsyncHttpClient"></activity>
+        <activity android:name=".TestWebViewActivity"></activity>
+        <activity android:name=".TestHTMLAtivity" />
+        <activity android:name=".TestAsyncHttpClient" />
         <activity android:name=".TestURLConnectionActivity" />
         <activity android:name=".TestThreadActivity" />
         <activity android:name=".TestHawkActivity" />
@@ -31,7 +27,15 @@
         <activity android:name=".TestSharePrenfrenceActivity" />
         <activity android:name=".TestImplicitIntentActivity" />
         <activity android:name=".ConfirmDataActivity" />
-        <activity android:name=".EnterDataActivity" />
+        <activity android:name=".EnterDataActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity android:name=".TestClickListenerActivity" />
         <activity android:name=".MainActivity" />
     </application>
