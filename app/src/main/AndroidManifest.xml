@@ -3,6 +3,7 @@
     package="ir.mft.mftfridaysbahman97">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -11,12 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestVideoViewActivity">
+        <activity android:name=".TestNotificationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".TestDataBaseActivity">
-        </activity>
-        <activity android:name=".TestWebViewActivity"></activity>
+        <activity
+            android:name=".TestDialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".TestAlertDialogActivity"></activity>
+        <activity android:name=".TestMenuActivity" />
+        <activity android:name=".TestPermissionActivity" />
+        <activity android:name=".TestFragmentPagerActivity" />
+        <activity android:name=".TestFragmentActivity" />
+        <activity android:name=".TestVideoViewActivity" />
+        <activity android:name=".TestDataBaseActivity" />
+        <activity android:name=".TestWebViewActivity" />
         <activity android:name=".TestHTMLAtivity" />
         <activity android:name=".TestAsyncHttpClient" />
         <activity android:name=".TestURLConnectionActivity" />
@@ -27,17 +41,17 @@
         <activity android:name=".TestSharePrenfrenceActivity" />
         <activity android:name=".TestImplicitIntentActivity" />
         <activity android:name=".ConfirmDataActivity" />
-        <activity android:name=".EnterDataActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
+        <activity android:name=".EnterDataActivity" />
         <activity android:name=".TestClickListenerActivity" />
         <activity android:name=".MainActivity" />
+
+        <receiver android:name=".TestBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".TestService" />
     </application>
 
 </manifest>
